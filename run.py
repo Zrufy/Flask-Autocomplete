@@ -14,7 +14,7 @@ def autocomplete():
 @app.route('/',methods=['GET','POST'])
 def index():
     form = request.form.get("autocomp")
-    return render_template("search.html",form=form)
+    return render_template("index.html",form=form)
 
 if __name__ == '__main__':
     app.run(debug=True)
